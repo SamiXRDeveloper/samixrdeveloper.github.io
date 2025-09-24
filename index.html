@@ -2,28 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; }
-    h1 { color: #333; }
-    .projects { margin-top: 20px; }
-    .project { margin-bottom: 15px; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sami Nasir | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>👋 Hi, I’m [Your Name]</h1>
-  <p>Welcome to my portfolio! Here you’ll find my projects and experiments.</p>
+<body class="bg-gray-50 text-gray-900">
+  <!-- HEADER -->
+  <header class="max-w-6xl mx-auto p-6 flex items-center justify-between">
+    <div>
+      <h1 class="text-2xl font-extrabold">Sami Nasir</h1>
+      <p class="text-sm opacity-70">Senior Unity & XR Engineer • Pakistan</p>
+    </div>
+    <div class="flex items-center space-x-4">
+      <a href="resume.pdf" class="px-3 py-2 border rounded-lg hover:bg-gray-100">Download Resume</a>
+      <a href="mailto:youremail@example.com" class="px-3 py-2 border rounded-lg hover:bg-gray-100">Contact</a>
+    </div>
+  </header>
 
-  <div class="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project 1</h3>
-      <p>Description of project 1.</p>
+  <!-- HERO -->
+  <section class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-6 items-center">
+    <div>
+      <h2 class="text-4xl font-extrabold leading-tight">Crafting performant XR & Unity experiences<br><span class="text-indigo-600">that scale to devices.</span></h2>
+      <p class="mt-4 text-lg opacity-80">I build tools, systems and polished experiences for AR/VR and interactive training. My focus is robust engineering, maintainable code and production-grade performance.</p>
+      <div class="mt-6 flex gap-3">
+        <a href="#projects" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:opacity-90">View Projects</a>
+        <a href="mailto:youremail@example.com" class="px-4 py-2 border rounded-lg">Hire Me</a>
+      </div>
     </div>
-    <div class="project">
-      <h3>Project 2</h3>
-      <p>Description of project 2.</p>
+    <div class="order-first md:order-last">
+      <div class="w-full h-64 md:h-80 rounded-2xl bg-gradient-to-tr from-indigo-100 to-white flex items-center justify-center border">
+        <p class="text-center opacity-80">[Hero Image / Mockup]</p>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 mt-16">
+    <h3 class="text-2xl font-semibold">Projects</h3>
+    <div class="grid md:grid-cols-2 gap-6 mt-6">
+      <div class="p-4 border rounded-lg bg-white hover:shadow">
+        <h4 class="font-semibold text-lg">Army VR Training Suite</h4>
+        <p class="mt-2 text-sm opacity-80">Immersive VR training app for new recruits featuring mission scenarios, scoring, and analytics. Built with Unity & Meta Quest 3 optimizations.</p>
+      </div>
+      <div class="p-4 border rounded-lg bg-white hover:shadow">
+        <h4 class="font-semibold text-lg">Video Configurator (XR)</h4>
+        <p class="mt-2 text-sm opacity-80">Editor tooling and runtime systems for configurable hotspot-based 360 video experiences.</p>
+      </div>
+      <div class="p-4 border rounded-lg bg-white hover:shadow">
+        <h4 class="font-semibold text-lg">Speech-to-Text Demo</h4>
+        <p class="mt-2 text-sm opacity-80">Real-time STT + TTS pipeline with cloud integration and low-latency playback for dialog systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & EXPERIENCE -->
+  <section class="max-w-6xl mx-auto px-6 mt-16 grid md:grid-cols-2 gap-6">
+    <div class="p-6 border rounded-lg bg-white">
+      <h3 class="text-xl font-semibold">Skills</h3>
+      <ul class="list-disc list-inside mt-4 text-sm space-y-1">
+        <li>Unity (C#)</li>
+        <li>AR/VR (AR Foundation, OpenXR)</li>
+        <li>Shader Graph & HLSL</li>
+        <li>Systems Design</li>
+        <li>Git, CI/CD, Blender, Photoshop</li>
+      </ul>
+    </div>
+    <div class="p-6 border rounded-lg bg-white">
+      <h3 class="text-xl font-semibold">Experience</h3>
+      <div class="mt-4">
+        <div>
+          <div class="font-semibold">Lead XR Engineer</div>
+          <div class="text-sm opacity-70">Top Defense Tech • 2023 — Present</div>
+          <ul class="list-disc list-inside text-sm mt-2 opacity-80">
+            <li>Led a 6-person XR team to deliver mission-critical VR training software.</li>
+            <li>Designed runtime systems to reduce memory footprint by 40%.</li>
+            <li>Authored CI/CD pipeline for automated device builds.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="max-w-6xl mx-auto px-6 mt-16 p-6 border rounded-lg bg-white">
+    <h3 class="text-xl font-semibold">Contact</h3>
+    <p class="mt-2 text-sm opacity-80">I respond quickly to inquiries about contract work, consulting, and full-time roles.</p>
+    <a href="mailto:youremail@example.com" class="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white rounded-lg">Email Me</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="max-w-6xl mx-auto px-6 py-12 text-sm text-center opacity-70">
+    © 2025 Sami Nasir. Built with HTML + TailwindCSS.
+  </footer>
 </body>
 </html>
