@@ -19,7 +19,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: #222;
+    background: #1f5374;
     color: #fff;
   }
   
@@ -41,7 +41,9 @@
   .nav-links a:hover {
     color: #00bcd4;
   }
-  
+  .projects h2 {
+    margin-bottom: 1.5rem; /* adjust spacing */
+  }
   /* Hero */
   .hero {
     text-align: center;
@@ -58,7 +60,7 @@
   }
   
   .hero h1 span {
-    color: yellow;
+    color: blue;
   }
   
   .btn {
